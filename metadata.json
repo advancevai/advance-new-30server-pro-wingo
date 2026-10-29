@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Remix DK-WIN OFFICIAL TEAM - WinGo VIP Predictor",
+  "description": "𝗗𝗞-𝗪𝗜𝗡 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗧𝗘𝗔𝗠 - ১৭-ডিজিট মার্কেট পিরিয়ড সিঙ্ক, ৩০টি এআই প্রেডিকশন সার্ভার, ৩০ সেকেন্ড, ১ মিনিট, ৩ মিনিট ও ৫ মিনিট লাইভ সিগন্যাল টার্মিনাল।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

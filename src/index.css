@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glow-emerald-sm {
+    box-shadow: 0 0 12px rgba(25, 213, 138, 0.25);
+  }
+  .glow-emerald-md {
+    box-shadow: 0 0 25px rgba(25, 213, 138, 0.4);
+  }
+  .glow-emerald-lg {
+    box-shadow: 0 0 45px rgba(25, 213, 138, 0.6);
+  }
+  .glow-darkgreen-md {
+    box-shadow: 0 0 25px rgba(6, 59, 41, 0.5);
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --main-bg: #080A0B;
+  --card-bg: #101214;
+  --primary-accent: #19D58A;
+  --secondary-accent: #063B29;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-emerald: rgba(25, 213, 138, 0.25);
+  --main-text: #F8FAFC;
+  --secondary-text: #94A3B8;
+}
+
+body {
+  background-color: #080A0B;
+  color: #F8FAFC;
+  font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+/* Atmospheric 3D Storm Cloud Drift */
+@keyframes storm-drift {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  50% {
+    transform: scale(1.05) translate(-10px, -6px);
+  }
+  100% {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+.animate-storm-drift {
+  animation: storm-drift 38s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Realistic Lightning Flickers */
+@keyframes lightning-flash {
+  0%, 86%, 89%, 93%, 97%, 100% {
+    opacity: 0;
+  }
+  87% {
+    opacity: 0.38;
+  }
+  88% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.55;
+  }
+  91% {
+    opacity: 0.2;
+  }
+  92% {
+    opacity: 0.7;
+  }
+  94% {
+    opacity: 0.25;
+  }
+  95% {
+    opacity: 0.45;
+  }
+}
+
+.animate-lightning {
+  animation: lightning-flash 11s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Secondary subtle distant sheet lightning */
+@keyframes lightning-sheet {
+  0%, 91%, 95%, 100% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0.22;
+  }
+  93% {
+    opacity: 0.08;
+  }
+  94% {
+    opacity: 0.3;
+  }
+}
+
+.animate-lightning-sheet {
+  animation: lightning-sheet 16s infinite ease-in-out 4s;
+  pointer-events: none;
+}
